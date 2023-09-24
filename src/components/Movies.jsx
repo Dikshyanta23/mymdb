@@ -96,6 +96,7 @@ const Wrapper = styled.main`
     border-color: transparent;
     background: transparent;
     font-size: 1rem;
+    text-transform: capitalize;
   }
   .btn1:hover {
     cursor: pointer;
