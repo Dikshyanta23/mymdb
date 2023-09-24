@@ -31,7 +31,7 @@ export const AppProvider = ({children}) => {
             })
             const allCategories = [
               'all',
-              ...new Set(movieList.map((item) => item.category)),
+              ...new Set(movieList.map((item) => item.category.toLowerCase())),
             ];
             setLoading(false)
             setMovies(movieList)
@@ -50,7 +50,7 @@ export const AppProvider = ({children}) => {
         getData();
         return;
       }
-        const newList = allMovies.filter((movie) => movie.category === item);
+        const newList = allMovies.filter((movie) => movie.category.toLowerCase() === item.toLowerCase());
         setMovies(newList);
     };
 
