@@ -106,6 +106,12 @@ const Wrapper = styled.main`
     border-bottom: 2px solid var(--primary-500);
     color: var(--primary-500);
   }
+    @media (max-width: 1075px) {
+    article {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 `;
 
 export default Movies
