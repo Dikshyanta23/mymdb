@@ -40,6 +40,7 @@ const Wrapper = styled.main`
   margin: 0 auto;
   .btn-bar {
     button {
+      text-transform: capitalize;
       padding: 0.5rem 0;
       width: 8rem;
     }
